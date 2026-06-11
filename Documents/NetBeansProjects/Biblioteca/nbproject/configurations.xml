@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <logicalFolder name="f3" displayName="Clases" projectFiles="true">
+        <itemPath>Funcionario.h</itemPath>
+        <itemPath>Lector.h</itemPath>
+        <itemPath>Sesion.h</itemPath>
+        <itemPath>Usuario.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f1"
+                     displayName="Controladores, Interfaz y Manejador"
+                     projectFiles="true">
+        <itemPath>CtrlSesion.h</itemPath>
+        <itemPath>CtrlUsuario.h</itemPath>
+        <itemPath>ICtrlSesion.h</itemPath>
+        <itemPath>ICtrlUsuario.h</itemPath>
+        <itemPath>ManejadorUsuario.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="Data Types" projectFiles="true">
+        <itemPath>DtFecha.h</itemPath>
+        <itemPath>DtFuncionario.h</itemPath>
+        <itemPath>DtLector.h</itemPath>
+        <itemPath>DtUsuario.h</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="f1" displayName="Clases" projectFiles="true">
+        <itemPath>Funcionario.cpp</itemPath>
+        <itemPath>Lector.cpp</itemPath>
+        <itemPath>Sesion.cpp</itemPath>
+        <itemPath>Usuario.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f3" displayName="Controladores" projectFiles="true">
+        <itemPath>CtrlSesion.cpp</itemPath>
+        <itemPath>CtrlUsuario.cpp</itemPath>
+        <itemPath>ManejadorUsuario.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="Data Types" projectFiles="true">
+        <itemPath>DtFecha.cpp</itemPath>
+        <itemPath>DtFuncionario.cpp</itemPath>
+        <itemPath>DtLector.cpp</itemPath>
+        <itemPath>DtUsuario.cpp</itemPath>
+      </logicalFolder>
+      <itemPath>main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+      </compileType>
+      <item path="CtrlSesion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CtrlSesion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CtrlUsuario.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CtrlUsuario.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DtFecha.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DtFecha.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DtFuncionario.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DtFuncionario.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DtLector.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DtLector.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DtUsuario.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DtUsuario.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Funcionario.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Funcionario.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ICtrlSesion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ICtrlUsuario.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Lector.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Lector.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ManejadorUsuario.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ManejadorUsuario.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sesion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sesion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Usuario.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Usuario.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="CtrlSesion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CtrlSesion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CtrlUsuario.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CtrlUsuario.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DtFecha.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DtFecha.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DtFuncionario.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DtFuncionario.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DtLector.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DtLector.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DtUsuario.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DtUsuario.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Funcionario.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Funcionario.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ICtrlSesion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ICtrlUsuario.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Lector.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Lector.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ManejadorUsuario.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ManejadorUsuario.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sesion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sesion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Usuario.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Usuario.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
