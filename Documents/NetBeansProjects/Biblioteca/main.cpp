@@ -29,7 +29,6 @@ int main() {
             std::string pass;
             std::cout << "ID: " ;
             std::cin >> id;
-            std::cout << "\n" ;
             
             std::cout << "PASSWORD: " ;
             std::cin >> pass;
