@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 #include <set>
 #include "controladores/ICtrlSesion.h"
 #include "controladores/ICtrlUsuario.h"
@@ -16,23 +17,23 @@ int main() {
     DtFuncionario* DtRoot = icUsuario->registrarFuncionarioNuevo("root","root","root",0);
     icUsuario->confirmarRegistro();
     
-    std::cout << "1 - Iniciar Sesion\n" ;
-    std::cout << "2 - Salir\n" ;
-    std::cout << "Opcion: " ;
+    cout << "1 - Iniciar Sesion\n" ;
+    cout << "2 - Salir\n" ;
+    cout << "Opcion: " ;
     int num = 0;
-    std::cin >> num;
-    std::cout << "\n \n" ;
+    cin >> num;
+    cout << "\n \n" ;
     
     switch (num) {
         case 1:{
-            std::string id;
-            std::string pass;
-            std::cout << "ID: " ;
-            std::cin >> id;
+            string id;
+            string pass;
+            cout << "ID: " ;
+            cin >> id;
             
-            std::cout << "PASSWORD: " ;
-            std::cin >> pass;
-            std::cout << "\n" ;
+            cout << "PASSWORD: " ;
+            cin >> pass;
+            cout << "\n" ;
             
             bool ingresarDatos = icSesion->ingresarDatos(id,pass);
             bool cancela = false;
@@ -42,18 +43,18 @@ int main() {
             } else { 
                 while (!ingresarDatos && !cancela) {
                     int opcion;
-                    std::cout << "Las credenciales no son correctas.\n\n" ;
-                    std::cout << "1 - Intentar nuevamente\n" ;
-                    std::cout << "2 - Salir\n" ;
-                    std::cout << "Opcion: " ;
-                    std::cin >> opcion;
-                    std::cout << "\n" ;
+                    cout << "Las credenciales no son correctas.\n\n" ;
+                    cout << "1 - Intentar nuevamente\n" ;
+                    cout << "2 - Salir\n" ;
+                    cout << "Opcion: " ;
+                    cin >> opcion;
+                    cout << "\n" ;
                     if (opcion == 1) {
-                        std::cout << "ID: " ;
-                        std::cin >> id;
-                        std::cout << "PASSWORD: " ;
-                        std::cin >> pass;
-                        std::cout << "\n" ;
+                        cout << "ID: " ;
+                        cin >> id;
+                        cout << "PASSWORD: " ;
+                        cin >> pass;
+                        cout << "\n" ;
                         
                         ingresarDatos = icSesion->ingresarDatos(id,pass);
                         if (ingresarDatos == true) {
