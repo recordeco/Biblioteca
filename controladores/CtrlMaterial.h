@@ -20,13 +20,13 @@ private:
     DtRevista* dtRevistaRecordado;
 public:
     static CtrlMaterial* getInstancia();
-    DtMaterial* recordarDatosMaterial(string codigo, string titulo, string autor, string editorial, string anio, string tipo);
+    DtMaterial* recordarDatosMaterial(string codigo, string titulo, int anioPublicacion);
     DtLibro* recordarDatosLibro(DtMaterial* datosMaterial, string autor, int cantPaginas);
     DtRevista* recordarDatosRevista(DtMaterial* datosRevista, int nroEdicion, bool esMensual);
     void confirmarAgregarMaterial();
     void cancelarAgregar();
     Material* buscarMaterial(string codigo);
-    vector<Material*> listarMateriales();
+    set<Material*> listarMateriales();
 };
 
 #endif/* CTRLMATERIAL_H */

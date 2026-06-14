@@ -16,6 +16,8 @@ Usuario::Usuario(Usuario& u){
     this->password = u.password;
 }
 
+Usuario::~Usuario() {}
+
 //Getters
 std::string Usuario::getIdentificador(){
     return this->identificador;

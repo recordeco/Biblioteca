@@ -15,8 +15,6 @@ public:
     set<Material*> getMateriales();
     Material* getMaterial(string codigo);
     void agregarMaterial(Material* m);
-    void eliminarMaterial(string codigo);
-    void modificarMaterial(string codigo, string titulo, string autor, string editorial, string anio, string tipo);
 };
 
 #endif /* MANEJADORMATERIAL_H */

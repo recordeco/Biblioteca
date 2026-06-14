@@ -8,7 +8,7 @@
 #include "../dt/DtLibro.h"
 class ICtrlMaterial {
 public:
-    virtual DtMaterial* recordarDatosMaterial(string codigo, string titulo, string autor, string editorial, string anio, string tipo) = 0;
+    virtual DtMaterial* recordarDatosMaterial(string codigo, string titulo, int anioPublicacion) = 0;
     virtual DtLibro* recordarDatosLibro(DtMaterial* datosLibro, string autor, int cantPaginas) = 0;
     virtual DtRevista* recordarDatosRevista(DtMaterial* datosRevista, int nroEdicion, bool esMensual) = 0;
     virtual void confirmarAgregarMaterial() = 0;

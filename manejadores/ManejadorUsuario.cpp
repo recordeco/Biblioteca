@@ -13,8 +13,6 @@ ManejadorUsuario* ManejadorUsuario::getInstancia(){
 
 ManejadorUsuario::ManejadorUsuario(){}
 
-ManejadorUsuario::~ManejadorUsuario(){}
-
 std::set<Usuario*> ManejadorUsuario::getUsuarios(){
     return this->usuarios;
 }

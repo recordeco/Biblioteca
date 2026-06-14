@@ -12,6 +12,7 @@ private:
     int cantDiasPrestamo;
 public:
     Prestamo(DtFecha* fechaPrestamo, int cantDiasPrestamo);
+    ~Prestamo();
     DtFecha* getFechaPrestamo();
     int getCantDiasPrestamo();
     DtPrestamo getDatosPrestamo(DtLector* lector, DtMaterial* material);

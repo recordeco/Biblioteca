@@ -37,14 +37,26 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/CtrlSesion.o \
 	${OBJECTDIR}/CtrlUsuario.o \
+	${OBJECTDIR}/CtrlMaterial.o \
+	${OBJECTDIR}/CtrlPrestamo.o \
 	${OBJECTDIR}/DtFecha.o \
 	${OBJECTDIR}/DtFuncionario.o \
 	${OBJECTDIR}/DtLector.o \
 	${OBJECTDIR}/DtUsuario.o \
+	${OBJECTDIR}/DtMaterial.o \
+	${OBJECTDIR}/DtLibro.o \
+	${OBJECTDIR}/DtRevista.o \
+	${OBJECTDIR}/DtPrestamo.o \
 	${OBJECTDIR}/Fabrica.o \
 	${OBJECTDIR}/Funcionario.o \
 	${OBJECTDIR}/Lector.o \
+	${OBJECTDIR}/Libro.o \
+	${OBJECTDIR}/Revista.o \
+	${OBJECTDIR}/Prestamo.o \
+	${OBJECTDIR}/Material.o \
 	${OBJECTDIR}/ManejadorUsuario.o \
+	${OBJECTDIR}/ManejadorMaterial.o \
+	${OBJECTDIR}/ManejadorPrestamo.o \
 	${OBJECTDIR}/Sesion.o \
 	${OBJECTDIR}/Usuario.o \
 	${OBJECTDIR}/main.o
@@ -84,6 +96,16 @@ ${OBJECTDIR}/CtrlUsuario.o: controladores/CtrlUsuario.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CtrlUsuario.o controladores/CtrlUsuario.cpp
 
+${OBJECTDIR}/CtrlMaterial.o: controladores/CtrlMaterial.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CtrlMaterial.o controladores/CtrlMaterial.cpp
+
+${OBJECTDIR}/CtrlPrestamo.o: controladores/CtrlPrestamo.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CtrlPrestamo.o controladores/CtrlPrestamo.cpp
+
 ${OBJECTDIR}/DtFecha.o: dt/DtFecha.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
@@ -104,6 +126,26 @@ ${OBJECTDIR}/DtUsuario.o: dt/DtUsuario.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/DtUsuario.o dt/DtUsuario.cpp
 
+${OBJECTDIR}/DtMaterial.o: dt/DtMaterial.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/DtMaterial.o dt/DtMaterial.cpp
+
+${OBJECTDIR}/DtLibro.o: dt/DtLibro.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/DtLibro.o dt/DtLibro.cpp
+
+${OBJECTDIR}/DtRevista.o: dt/DtRevista.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/DtRevista.o dt/DtRevista.cpp
+
+${OBJECTDIR}/DtPrestamo.o: dt/DtPrestamo.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/DtPrestamo.o dt/DtPrestamo.cpp
+
 ${OBJECTDIR}/Fabrica.o: Fabrica.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
@@ -119,10 +161,40 @@ ${OBJECTDIR}/Lector.o: dominio/Lector.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Lector.o dominio/Lector.cpp
 
+${OBJECTDIR}/Libro.o: dominio/Libro.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Libro.o dominio/Libro.cpp
+
+${OBJECTDIR}/Revista.o: dominio/Revista.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Revista.o dominio/Revista.cpp
+
+${OBJECTDIR}/Prestamo.o: dominio/Prestamo.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Prestamo.o dominio/Prestamo.cpp
+
+${OBJECTDIR}/Material.o: dominio/Material.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Material.o dominio/Material.cpp
+
 ${OBJECTDIR}/ManejadorUsuario.o: manejadores/ManejadorUsuario.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ManejadorUsuario.o manejadores/ManejadorUsuario.cpp
+
+${OBJECTDIR}/ManejadorMaterial.o: manejadores/ManejadorMaterial.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ManejadorMaterial.o manejadores/ManejadorMaterial.cpp
+
+${OBJECTDIR}/ManejadorPrestamo.o: manejadores/ManejadorPrestamo.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ManejadorPrestamo.o manejadores/ManejadorPrestamo.cpp
 
 ${OBJECTDIR}/Sesion.o: dominio/Sesion.cpp
 	${MKDIR} -p ${OBJECTDIR}

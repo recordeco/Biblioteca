@@ -27,8 +27,8 @@ CtrlMaterial* CtrlMaterial::getInstancia() {
     return instancia;
 }
 
-DtMaterial* CtrlMaterial::recordarDatosMaterial(string codigo, string titulo, string autor, string editorial, string anio, string tipo) {
-    DtMaterial* dtM = new DtMaterial(codigo, titulo, stoi(anio));
+DtMaterial* CtrlMaterial::recordarDatosMaterial(string codigo, string titulo, int anioPublicacion) {
+    DtMaterial* dtM = new DtMaterial(codigo, titulo, anioPublicacion);
     this->dtMaterialRecordado = dtM;
     return dtM;
 }
@@ -75,7 +75,6 @@ Material* CtrlMaterial::buscarMaterial(string codigo) {
     return this->manejador->getMaterial(codigo);
 }
 
-vector<Material*> CtrlMaterial::listarMateriales() {
-    set<Material*> mats = this->manejador->getMateriales();
-    return vector<Material*>(mats.begin(), mats.end());
+set<Material*> CtrlMaterial::listarMateriales() {
+    return this->manejador->getMateriales();
 }

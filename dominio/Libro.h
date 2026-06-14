@@ -8,6 +8,7 @@ private:
     int cantPaginas;
 public:
     Libro(string codigo, string titulo, int anioPublicacion, string autor, int cantPaginas);
+    ~Libro();
     string getAutor();
     int getCantPaginas();
     void setAutor(string autor);

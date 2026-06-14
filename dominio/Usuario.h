@@ -15,6 +15,7 @@ public:
     Usuario();
     Usuario(std::string i, std::string n, std::string p);
     Usuario(Usuario& u);
+    virtual ~Usuario();
     
     //Getters
     std::string getIdentificador();
